@@ -43,7 +43,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 
 	// If Result equals one, lost all and pass his turn to the other player.
 	//two six in a row, loss all.
-	if(lastDiceZero === 6 && diceZero === 6 || lastDiceOne === 6 && lastDiceZero === 6){
+	if(lastDiceZero === 6 && diceZero === 6 || lastDiceOne === 6 && diceOne === 6){
 		document.querySelector('#score-'+ activePlayer).textContent = 0;
 		roundScore = 0;
 		score[activePlayer] = 0;
